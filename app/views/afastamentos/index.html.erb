@@ -1,33 +1,38 @@
-<h1>Afastamentos (COVID-19)</h1>
+<div class="container">
+  <div class="card-white">
+    <h1>Afastamentos (COVID-19)</h1>
 
-<p>Gerador de arquivo batch - (inclusão de afastamentos COVID-19 (0387 e 0388) em lote) - SIAPENET</p>
-<hr>
+    <p>Gerador de arquivo batch - (inclusão de afastamentos COVID-19 (0387 e 0388) em lote) - SIAPENET</p>
+    <hr>
 
-<p>Formato de dados:<br>
-siape,dia,código<br>
-siape,dia,código<br>
-siape,dia,código<br><br>
+    <p>Formato de dados:<br>
+    siape,dia,código<br>
+    siape,dia,código<br>
+    siape,dia,código<br><br>
 
-<b>Exemplo:</b><br>
-<code>
-1234567,28022022,0387<br>
-1234567,27022022,0387<br>
-1234567,26022022,0387<br>
-1122334,01022022,0388<br>
-1122334,02022022,0388<br>
-7654321,05022022,0387<br>
-7654321,06022022,0387<br>
-</code>
+    <b>Exemplo:</b><br>
+    <code>
+    1234567,28022022,0387<br>
+    1234567,27022022,0387<br>
+    1234567,26022022,0387<br>
+    1122334,01022022,0388<br>
+    1122334,02022022,0388<br>
+    7654321,05022022,0387<br>
+    7654321,06022022,0387<br>
+    </code>
 
-</p>
-<hr>
-<br>
+    </p>
+    <hr>
+    <br>
 
-<%= simple_form_for :leaves, :url => afastamentos_path, :method => :post, html: { class: 'form_class' } do |f|%>
-  <%= f.error_notification %>
-  <%= f.input :government_body, label: "Código do órgão", hint: '17000, 00304, 00014 e etc...', required: true %>
-  <%= f.input :manager_cpf, label: "CPF do Gestor/Operador UPAG", hint: 'XXXXXXXXXXX', required: true %>
-  <%= f.input :reference_month, label: "Mês de refência", hint: 'AAAAMM', required: true %>
-  <%= f.file_field :datasrc, class: 'form-control-file', required: true %>
-  <%= f.submit 'Download carga batch',  class: 'btn btn-primary mt-2' %>
-<% end %>
+    <%= simple_form_for :leaves, :url => afastamentos_path, :method => :post, html: { class: 'form_class' } do |f|%>
+      <%= f.error_notification %>
+      <%= f.input :government_body, label: "Código do órgão", hint: '17000, 00304, 00014 e etc...', required: true %>
+      <%= f.input :manager_cpf, label: "CPF do Gestor/Operador UPAG", hint: 'XXXXXXXXXXX', required: true %>
+      <%= f.input :reference_month, label: "Mês de refência", hint: 'AAAAMM', required: true %>
+      <%= f.file_field :datasrc, class: 'form-control-file', required: true %>
+      <%= f.submit 'Download carga batch',  class: 'btn btn-primary mt-2' %>
+    <% end %>
+  </div>
+
+</div>
