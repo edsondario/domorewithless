@@ -1,42 +1,48 @@
-<h1>Do more with less!</h1>
-<i><h3>Faça mais com menos!</h3></i>
-<hr>
+<div class="container">
+  <div class="card-white">
+    <h1>Do more with less!</h1>
+    <i><h3>Faça mais com menos!</h3></i>
+    <hr>
 
-<p>
-  Este app surgiu como forma de auxiliar os operadores do SIAPENET quanto 
-  processos repetitivos e manuais. A proposta é executa-los de forma robótica 
-  e automatizada <%= link_to "(RPA)", "https://en.wikipedia.org/wiki/Robotic_process_automation", target: :_blank %>.
-</p>
+    <p>
+      Este app surgiu como forma de auxiliar os operadores do SIAPENET quanto 
+      processos repetitivos e manuais. A proposta é executa-los de forma robótica 
+      e automatizada <%= link_to "(RPA)", "https://en.wikipedia.org/wiki/Robotic_process_automation", target: :_blank %>.
+    </p>
 
-<p>
-  Como atividade inicial, foi disponibilizado gerador de arquivo batch 
-  para <strong>afastamentos (covid-19)</strong> e 
-  <strong>movimentações financeiras</strong>.
+    <p>
+      Como atividade inicial, foi disponibilizado gerador de arquivo batch 
+      para <strong> <%= link_to "afastamentos (covid-19)", afastamentos_path %></strong>.
 
-  O arquivo deve ser enviado dentro do calendário de processamento da folha de
-  pagamento.
-</p>
+      O arquivo deve ser enviado dentro do calendário de processamento da folha de
+      pagamento.
+    </p>
 
-<p>
-Após logar no 
-<%= link_to "Siapenet", "https://www1.siapenet.gov.br/orgao/Login.do?method=inicio", target: :_blank %>, 
-siga este caminho:
-  <ol>
-    <li>
-      <strong>Órgão > Obtenção e Envio de Arquivos</strong>;
-    </li>
-    
-    <li>
-      Clicar em <strong>Envia arquivos</strong>;
-    </li>
-    
-    <li>
-      Escolha <strong>Códigos 387 e 388 - COVID19</strong> ou
-      <strong>Movimentação Financeira - Servidor</strong>;
-    </li>
+    <p>
+    Após logar no 
+    <%= link_to "Siapenet", "https://www1.siapenet.gov.br/orgao/Login.do?method=inicio", target: :_blank %>, 
+    siga este caminho:
+      <ol>
+        <li>
+          <strong>Órgão > Obtenção e Envio de Arquivos</strong>;
+        </li>
+        
+        <li>
+          Clicar em <strong>Envia arquivos</strong>;
+        </li>
+        
+        <li>
+          Escolha <strong>Códigos 387 e 388 - COVID19</strong>;
+        </li>
 
-    <li>
-      Por fim, após informar arquivo, clicar em <strong>Enviar arquivos</strong>.
-    </li>
-  </ol>
-</p>
+        <li>
+          Por fim, após informar arquivo, clicar em <strong>Enviar arquivos</strong>.
+        </li>
+      </ol>
+    </p>
+  </div>
+</div>
+
+
+
+
