@@ -23,9 +23,11 @@ siape,dia,código<br><br>
 <hr>
 <br>
 
-<%= simple_form_for :afastamentos, :url => afastamentos_path, :method => :post, html: { class: 'form_class' } do |f|%>
+<%= simple_form_for :leaves, :url => afastamentos_path, :method => :post, html: { class: 'form_class' } do |f|%>
   <%= f.error_notification %>
-  <%= f.input :id_orgao, label: "Código do órgão", hint: '17000, 20000, 20115 e etc...', required: true %>
+  <%= f.input :government_body, label: "Código do órgão", hint: '17000, 00304, 00014 e etc...', required: true %>
+  <%= f.input :manager_cpf, label: "CPF do Gestor/Operador UPAG", hint: 'XXXXXXXXXXX', required: true %>
+  <%= f.input :reference_month, label: "Mês de refência", hint: 'AAAAMM', required: true %>
   <%= f.file_field :datasrc, class: 'form-control-file', required: true %>
   <%= f.submit 'Download carga batch',  class: 'btn btn-primary mt-2' %>
 <% end %>
