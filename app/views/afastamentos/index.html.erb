@@ -1,2 +1,31 @@
-<h1>Afastamentos#index</h1>
-<p>Find me in app/views/afastamentos/index.html.erb</p>
+<h1>Afastamentos (COVID-19)</h1>
+
+<p>Gerador de arquivo batch - (inclusão de afastamentos COVID-19 (0387 e 0388) em lote) - SIAPENET</p>
+<hr>
+
+<p>Formato de dados:<br>
+siape,dia,código<br>
+siape,dia,código<br>
+siape,dia,código<br><br>
+
+<b>Exemplo:</b><br>
+<code>
+1234567,28022022,0387<br>
+1234567,27022022,0387<br>
+1234567,26022022,0387<br>
+1122334,01022022,0388<br>
+1122334,02022022,0388<br>
+7654321,05022022,0387<br>
+7654321,06022022,0387<br>
+</code>
+
+</p>
+<hr>
+<br>
+
+<%= simple_form_for :afastamentos, :url => afastamentos_path, :method => :post, html: { class: 'form_class' } do |f|%>
+  <%= f.error_notification %>
+  <%= f.input :id_orgao, label: "Código do órgão", hint: '17000, 20000, 20115 e etc...', required: true %>
+  <%= f.file_field :datasrc, class: 'form-control-file', required: true %>
+  <%= f.submit 'Download carga batch',  class: 'btn btn-primary mt-2' %>
+<% end %>
