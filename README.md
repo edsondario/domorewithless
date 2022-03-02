@@ -2,4 +2,4 @@ App fruto do ENAP Coding-Bootcamp (https://enap.gov.br/pt/cursos/coding-bootcamp
 
 Inicialmente, permite gerar carga batch para lançamento de afastamentos do tipo 0387 e 0388.
 
-https://github.com/edsondario/domorewithless
+https://domorewithless.herokuapp.com/
