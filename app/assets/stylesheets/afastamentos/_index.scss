@@ -41,6 +41,11 @@
   border-color: #8f5d46;
 }
 
+.btn-primary:hover {
+  background-color: #55433B;
+  border-color: #55433B;
+}
+
 h1 {
   text-align: center;
 }
@@ -50,6 +55,7 @@ a {
 }
 
 a:hover {
-  color: #8f5d46;
+  color: #55433B;
   font-weight: bold;
 }
+
