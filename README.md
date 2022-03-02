@@ -1,1 +1,3 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+App fruto do ENAP Coding-Bootcamp (https://enap.gov.br/pt/cursos/coding-bootcamp). Idealizado como ferramenta para diminuir desgate dos servidore públicos que operam o sistema SIAPENET.
+
+Inicialmente, permite gerar carga batch para lançamento de afastamentos do tipo 0387 e 0388.
